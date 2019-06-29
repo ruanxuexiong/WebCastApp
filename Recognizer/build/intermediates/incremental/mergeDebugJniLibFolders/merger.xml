@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="E:\nana\WebCastApp\Recognizer\libs"><file name="Msc-1.0.jar" path="E:\nana\WebCastApp\Recognizer\libs\Msc-1.0.jar"/><file name="Sunflower.jar" path="E:\nana\WebCastApp\Recognizer\libs\Sunflower.jar"/></source></dataSet><dataSet config="debug"><source path="E:\nana\WebCastApp\Recognizer\src\debug\jniLibs"/></dataSet></merger>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/common_header_layout"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:layout_width="51dp"
+            android:layout_height="51dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp">
+
+            <com.android.nana.ui.RoundImageView
+                android:id="@+id/attention_iv_picture"
+                android:layout_width="51dp"
+                android:layout_height="51dp">
+            </com.android.nana.ui.RoundImageView>
+
+            <ImageView
+                android:id="@+id/attention_iv_identy"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/icon_authen"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/attention_txt_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black_32"
+                android:textSize="16sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/attention_txt_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我关注的：0，关注我的：0"
+                android:textColor="@color/grey_64"
+                android:textSize="13sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/grey_e6"/>
+
+    <RadioGroup
+        android:id="@+id/attention_tab_rg_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:layout_marginTop="7dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingBottom="1dp"
+        android:paddingTop="1dp">
+
+        <RadioButton
+            android:id="@+id/attention_tab_rb_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_left_half_selector"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:paddingBottom="7dp"
+            android:paddingLeft="23dp"
+            android:paddingRight="23dp"
+            android:paddingTop="7dp"
+            android:text="我关注的"
+            android:textColor="@drawable/tab_text_white_selector"
+            android:textSize="14sp"/>
+
+        <RadioButton
+            android:id="@+id/attention_tab_rb_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_right_half_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingBottom="7dp"
+            android:paddingLeft="23dp"
+            android:paddingRight="23dp"
+            android:paddingTop="7dp"
+            android:text="关注我的"
+            android:textColor="@drawable/tab_text_white_selector"
+            android:textSize="14sp"/>
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/attention_tab_content"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>

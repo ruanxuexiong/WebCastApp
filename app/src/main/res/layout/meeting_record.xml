@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_header_layout" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey_f5"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/meeting_record_txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="被约人"
+            android:textColor="@color/black_32"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/meeting_record_txt_other"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="预约人"
+            android:textColor="@color/grey_64"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/meeting_record_txt_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="通话时长"
+            android:textColor="@color/grey_64"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+    <com.android.nana.loading.MultipleStatusView
+        android:id="@+id/multiple_status_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/common_listview" />
+
+    </com.android.nana.loading.MultipleStatusView>
+</LinearLayout>

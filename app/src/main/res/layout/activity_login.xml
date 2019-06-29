@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/common_btn_back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:background="@null"
+        android:src="@drawable/icon_home_back"
+        android:visibility="visible" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="42dp"
+                android:src="@mipmap/icon_new_welcome" />
+
+
+            <com.android.nana.widget.OverrideEditText
+                android:id="@+id/login_account"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:layout_marginLeft="37dp"
+                android:layout_marginRight="37dp"
+                android:layout_marginTop="100dp"
+                android:background="@drawable/bg_input"
+                android:drawableRight="@drawable/shanchu_image"
+                android:hint="请输入您的手机号"
+                android:inputType="phone"
+                android:maxLength="11" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="37dp"
+                android:layout_marginRight="38dp"
+                android:background="@color/grey_dd" />
+
+            <com.android.nana.widget.OverrideEditText
+                android:id="@+id/login_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:layout_marginLeft="37dp"
+                android:layout_marginRight="37dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bg_input"
+                android:drawableRight="@drawable/hide_normal"
+                android:hint="请输入密码"
+                android:inputType="textPassword"
+                android:maxLength="17" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="37dp"
+                android:layout_marginRight="38dp"
+                android:background="@color/grey_dd" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_code_login"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="37dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:text="验证码登录"
+                    android:textColor="@color/right"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/forget_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="37dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="忘记密码？"
+                    android:textColor="@color/right"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+
+            <com.android.nana.widget.StateButton
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="37dp"
+                android:layout_marginRight="37dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="登录"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                app:normalBackgroundColor="@color/right"
+                app:pressedBackgroundColor="@color/text_x"
+                app:radiusStateButton="4dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+-- Merging decision tree log ---
+manifest
+ADDED from E:\nana\WebCastApp\CallLib\AndroidManifest.xml:1:1-11:12
+INJECTED from E:\nana\WebCastApp\CallLib\AndroidManifest.xml:1:1-11:12
+INJECTED from E:\nana\WebCastApp\CallLib\AndroidManifest.xml:1:1-11:12
+INJECTED from E:\nana\WebCastApp\CallLib\AndroidManifest.xml:1:1-11:12
+INJECTED from E:\nana\WebCastApp\CallLib\AndroidManifest.xml:1:1-11:12
+INJECTED from E:\nana\WebCastApp\CallLib\AndroidManifest.xml:1:1-11:12
+INJECTED from E:\nana\WebCastApp\CallLib\AndroidManifest.xml:1:1-11:12
+	package
+		ADDED from E:\nana\WebCastApp\CallLib\AndroidManifest.xml:2:5-30
+		INJECTED from E:\nana\WebCastApp\CallLib\AndroidManifest.xml
+		INJECTED from E:\nana\WebCastApp\CallLib\AndroidManifest.xml
+	android:versionName
+		INJECTED from E:\nana\WebCastApp\CallLib\AndroidManifest.xml
+		ADDED from E:\nana\WebCastApp\CallLib\AndroidManifest.xml:1:1-11:12
+		INJECTED from E:\nana\WebCastApp\CallLib\AndroidManifest.xml
+	android:versionCode
+		INJECTED from E:\nana\WebCastApp\CallLib\AndroidManifest.xml
+		ADDED from E:\nana\WebCastApp\CallLib\AndroidManifest.xml:1:1-11:12
+		INJECTED from E:\nana\WebCastApp\CallLib\AndroidManifest.xml
+	xmlns:android
+		ADDED from E:\nana\WebCastApp\CallLib\AndroidManifest.xml:1:11-69
+application
+ADDED from E:\nana\WebCastApp\CallLib\AndroidManifest.xml:6:5-9:19
+uses-sdk
+INJECTED from E:\nana\WebCastApp\CallLib\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from E:\nana\WebCastApp\CallLib\AndroidManifest.xml
+INJECTED from E:\nana\WebCastApp\CallLib\AndroidManifest.xml
+INJECTED from E:\nana\WebCastApp\CallLib\AndroidManifest.xml
+INJECTED from E:\nana\WebCastApp\CallLib\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from E:\nana\WebCastApp\CallLib\AndroidManifest.xml
+		ADDED from E:\nana\WebCastApp\CallLib\AndroidManifest.xml
+		INJECTED from E:\nana\WebCastApp\CallLib\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from E:\nana\WebCastApp\CallLib\AndroidManifest.xml
+		ADDED from E:\nana\WebCastApp\CallLib\AndroidManifest.xml
+		INJECTED from E:\nana\WebCastApp\CallLib\AndroidManifest.xml

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black_p50">#7f000000</color>
+    <color name="gray_e7e7e7">#e7e7e7</color>
+    <color name="b_c_fafafa">#fafafa</color>
+    <color name="e_00">#00000000</color>
+    <color name="gray_dd">#DDDDDD</color>
+    <color name="gray_66">#666666</color>
+    <color name="blue_1A">#1AAD1A </color>
+    <color name="blue_F7">#F7F7F7  </color>
+    <color name="black_5a626d">#666666 </color>
+</resources>

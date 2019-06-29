@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    >
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <FrameLayout
+            android:layout_width="@dimen/dp_370"
+            android:layout_height="@dimen/dp_472"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_def"
+                    android:layout_width="@dimen/dp_370"
+                    android:layout_height="@dimen/dp_180"
+                    android:layout_marginTop="@dimen/dp_23"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/icon_red_def" />
+
+                <LinearLayout
+                    android:id="@+id/ll_plan"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_180"
+                    android:layout_marginTop="@dimen/dp_23"
+                    android:visibility="gone">
+
+                    <com.xiao.nicevideoplayer.NiceVideoPlayer
+                        android:id="@+id/video_player"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_180" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_bg_img"
+                    android:layout_width="@dimen/dp_370"
+                    android:layout_height="@dimen/dp_270"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/icon_red_top"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/tv_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="00.00"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp_48"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
+                        android:text="元"
+                        android:layout_marginTop="@dimen/dp_8"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp_20" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/hongbao_xq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/hongbao_xq"
+                   android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dp_215"
+                    />
+
+                    <TextView
+                        android:id="@+id/hongbao_text"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="正在存入钱包"
+                        android:textSize="@dimen/sp_14"
+                        android:textColor="#FFFFB6B2"
+                        android:layout_marginBottom="@dimen/dp_20"
+
+                        />
+            </RelativeLayout>
+        </FrameLayout>
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/iv_close"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="14dp"
+            android:src="@drawable/icon_red_close" />
+    </LinearLayout>
+
+</RelativeLayout>

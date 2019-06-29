@@ -1,0 +1,222 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+
+
+
+    defaultConfig {
+        applicationId "com.android.nana"
+        minSdkVersion 16
+        targetSdkVersion 26
+        versionCode 19
+        versionName "1.2.8"
+        flavorDimensions "versionCode"
+        multiDexEnabled = true
+
+
+        ndk {
+            abiFilters "armeabi", "armeabi-v7a", "x86", "armv7", "armv7-neon", "armv8", "x86", "x86_64"
+        }
+
+
+    }
+
+    packagingOptions {
+        exclude 'META-INF/rxjava.properties'
+        exclude 'AndroidManifest.xml'
+        exclude 'assets/map_assets/icons_35_14_1521026482.data'
+        exclude 'assets/ap1.data'
+        exclude 'assets/marker_gps_no_sharing.png'
+        exclude 'assets/map_assets/roadarrow.data'
+        exclude 'assets/map_assets/icons_23_14_1514285400.data'
+        exclude 'assets/map_assets/tmc_n_allinone.data'
+        exclude 'assets/location_pressed.png'
+        exclude 'assets/map_assets/3dportrait.xml'
+        exclude 'assets/map_assets/icons_5_14_1527583408.dat'
+        exclude 'assets'
+
+    }
+
+
+    signingConfigs {
+        release {
+            storeFile file('nana.jks')
+            storePassword 'nana123123'
+            keyAlias 'nana'
+            keyPassword 'nana123123'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            // signingConfig signingConfigs.release
+        }
+          debug {
+              minifyEnabled false
+              proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+           // signingConfig signingConfigs.release
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    //多渠道
+    productFlavors {
+        Yingyongbao {}
+
+        /*   Wandoujia {}
+        Yingyongbao {}
+         Xiaomi {}
+         Huawei {}
+         Baidu {}
+         AnZhuoShiChang {}
+         Sanliuling {}
+         Oppo {}
+         Vivo {}
+         Lenovo {}
+         Yingyonghui {}
+         Meizu {}
+         Mumayi {}
+         Jifengshichang {}
+         PP {}
+         Anzhi {}
+         Sougou {}
+         Kuchuan {}
+         Nduoshichang {}
+         Qihua360 {}*/
+        productFlavors.all {
+            flavor -> flavor.manifestPlaceholders = [BaiduMobAd_CHANNEL_VALUE: name]
+        }
+    }
+
+
+    configurations.all {
+        resolutionStrategy.force 'com.google.code.findbugs:jsr305:2.0.1'
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+}
+
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    api project(':common')
+    implementation files('libs/bcprov-jdk15on-152.jar')
+    implementation files('libs/weibosdkcore_release.jar')
+    implementation files('libs/jcore-android_v1.1.0.jar')
+    implementation files('libs/jpush-android_v3.0.1.jar')
+    implementation files('libs/SocialSDK_QQ_Simplify.jar')
+    implementation 'com.android.support:design:26.+'
+    implementation 'com.android.support:appcompat-v7:26.+'
+    implementation 'com.android.support:cardview-v7:26.+'
+    implementation 'com.android.support:recyclerview-v7:26.+'
+    implementation 'com.android.support:percent:26.+'
+    implementation 'com.github.davidpizarro:autolabelui:1.0.1'
+    implementation 'com.bigkoo:convenientbanner:2.0.5'
+    implementation 'com.makeramen:roundedimageview:2.2.1'
+    implementation 'com.google.android.gms:play-services-appindexing:8.4.0'
+    implementation 'com.tencent.bugly:crashreport_upgrade:latest.release'
+    implementation 'org.greenrobot:eventbus:3.0.0'
+    implementation 'com.yanzhenjie:recyclerview-swipe:1.0.4'
+    implementation 'com.arialyy.aria:aria-core:3.5.1'
+    //https://github.com/AriaLyy/Aria
+    implementation 'com.github.chrisbanes.photoview:library:1.2.4'
+    //桌面角标
+    //https://github.com/leolin310148/ShortcutBadger
+    implementation 'me.leolin:ShortcutBadger:1.1.22@aar'
+    implementation 'com.github.bumptech.glide:glide:4.0.0'
+    implementation 'com.android.support:percent:26.+'
+    //百分比布局
+    implementation 'com.tencent.mid:mid:3.72.4-alpha'
+    implementation 'com.contrarywind:Android-PickerView:3.2.5'
+    implementation 'com.github.davidpizarro:autolabelui:1.0.1'
+    implementation 'com.github.zcweng:switch-button:0.0.3@aar'
+    //https://github.com/zcweng/SwitchButton 开关
+    implementation 'net.soulwolf.widget:speedySelector:1.0.0'
+    //消息
+    implementation 'com.android.support:multidex:1.0.1'
+    implementation 'com.bigkoo:convenientbanner:2.0.5'
+    implementation 'com.squareup.okhttp3:okhttp:3.4.2n'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.4.2'
+    implementation 'com.squareup.okhttp3:okhttp-urlconnection:3.4.2'
+    //https://github.com/ogaclejapan/SmartTabLayout
+    implementation 'com.ogaclejapan.smarttablayout:library:1.6.1@aar'
+    implementation 'com.wrapp.floatlabelededittext:library:0.0.6'
+    //https://github.com/wrapp-archive/floatlabelededittext
+    implementation 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
+    //tab 角标https://github.com/H07000223/FlycoTabLayout
+    implementation 'com.tapadoo.android:alerter:2.0.1'
+    //通知栏https://github.com/Tapadoo/Alerter
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    //https://github.com/hdodenhof/CircleImageView
+    implementation 'com.qiniu:qiniu-android-sdk:7.3.+'
+    //七牛云SDK
+    implementation 'com.facebook.rebound:rebound:0.3.8'
+    implementation 'com.nineoldandroids:library:2.4.0'
+    implementation 'com.flyco.pageindicator:FlycoPageIndicator_Lib:1.0.0@aar'
+    implementation 'com.facebook.fresco:fresco:0.12.0'
+    implementation 'com.malinskiy:materialicons:1.0.2'
+    // 刷新框架 https://github.com/scwang90/SmartRefreshLayout
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-12'
+    //https://github.com/Justson/CoolIndicator
+    implementation 'com.coolindicator.sdk:coolindicator:1.0.0-beta'
+    //gif 图
+    // fresco库依赖
+    implementation 'com.facebook.fresco:fresco:1.0.1'
+    // 支持GIF动图，需要添加
+    implementation 'com.facebook.fresco:animated-gif:1.0.1'
+    //高德定位api
+    implementation 'com.amap.api:3dmap:latest.integration'
+
+    implementation 'com.amap.api:location:latest.integration'
+    implementation 'com.amap.api:search:latest.integration'
+    implementation 'com.mikhaellopez:circularprogressbar:1.1.1'
+    implementation files('libs/fastjson-1.2.5.jar')
+    implementation files('libs/greendao-1.3.7.jar')
+    implementation files('libs/org.apache.http.legacy.jar')
+    api project(':IMKit')
+    api project(':Recognizer')
+    api project(':CallKit')
+    implementation files('libs/jsoup-1.8.3.jar')
+    api project(':picture_library')
+    api project(':filter-lib')
+    api project(':magicindicator')
+    api project(':nicevideoplayer')
+    api project(':superweb')
+    implementation files('libs/pldroid-shortvideo-1.15.0.jar')
+    implementation files('libs/alipaySingle-20170510.jar')
+    implementation files('libs/MiPush_SDK_Client_3_5_1.jar')
+    implementation 'io.reactivex.rxjava2:rxjava:2.0.5'
+    implementation 'com.android.support:exifinterface:27.1.1'
+    implementation 'com.meizu.flyme.internet:push-internal:3.6.+@aar'
+    api 'com.huawei.android.hms:push:2.6.1.301'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+
+    androidTestImplementation(rootProject.ext.dependencies.espresso, {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    configurations {
+        all*.exclude group: 'com.google.code.gson'
+    }
+
+
+}

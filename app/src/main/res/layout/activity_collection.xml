@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_toolbar_common" />
+
+
+    <com.android.nana.loading.MultipleStatusView
+        android:id="@+id/multiple_status_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.android.common.ui.pull.PullToRefreshLayout
+                android:id="@+id/refresh_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <include layout="@layout/refresh_head" />
+
+                <!-- 支持所有实现Pullable接口的View -->
+
+                <com.android.common.ui.pull.pullableview.PullableListView
+                    android:id="@+id/content_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/grey_f5"
+                    android:divider="@null" />
+
+                <include layout="@layout/load_more" />
+            </com.android.common.ui.pull.PullToRefreshLayout>
+
+            <include layout="@layout/default_load_fail" />
+        </LinearLayout>
+
+
+    </com.android.nana.loading.MultipleStatusView>
+
+
+</LinearLayout>

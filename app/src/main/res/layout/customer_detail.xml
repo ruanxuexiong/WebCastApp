@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/grey_f5"
+            android:scrollbars="none">
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/customer_detail_iv_top"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/icon_me_bg"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="115dp"
+                android:background="@drawable/white_bg_shape">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="15dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="45dp"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/customer_detail_txt_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="hhhhhhhhhhh"
+                            android:textColor="@color/black_32"
+                            android:textSize="16sp"/>
+
+                        <TextView
+                            android:id="@+id/customer_detail_txt_gender"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/customer_detail_txt_name"
+                            android:layout_marginLeft="15dp"
+                            android:text="sssss"
+                            android:textColor="@color/bule_42"
+                            android:textSize="15sp"/>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/customer_detail_txt_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/grey_96"
+                        android:textSize="13sp"/>
+
+                    <TextView
+                        android:id="@+id/customer_detail_txt_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="3dp"
+                        android:textColor="@color/grey_96"
+                        android:textSize="13sp"/>
+
+                    <TextView
+                        android:id="@+id/customer_detail_txt_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="3dp"
+                        android:textColor="@color/grey_96"
+                        android:textSize="13sp"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/customer_detail_rl_head"
+                android:layout_width="81dp"
+                android:layout_height="81dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="75dp">
+
+                <com.android.nana.ui.RoundImageView
+                    android:id="@+id/customer_detail_iv_head"
+                    android:layout_width="81dp"
+                    android:layout_height="81dp"
+                    android:layout_alignParentTop="true"/>
+
+                <ImageView
+                    android:id="@+id/customer_detail_iv_identy"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/icon_authen"
+                    android:visibility="gone"/>
+
+            </RelativeLayout>
+
+            <ImageButton
+                android:id="@+id/customer_detail_btn_back"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@null"
+                android:src="@drawable/icon_back"
+                android:visibility="visible"/>
+
+            <ImageView
+                android:id="@+id/customer_detail_iv_edit1"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="125dp"
+                android:background="@drawable/icon_bule_edit"/>
+
+
+            <TextView
+                android:id="@+id/customer_detail_txt_authentication"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="6dp"
+                android:paddingRight="15dp"
+                android:text="身份认证"
+                android:textColor="@color/green_5c"
+                android:textSize="15sp"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/white_bg_shape"
+            android:orientation="vertical"
+            android:paddingTop="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="工作经历"
+                    android:textColor="@color/black_32"
+                    android:textSize="15sp"/>
+
+                <ImageView
+                    android:id="@+id/customer_detail_iv_edit2"
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/icon_bule_edit"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/customer_detail_ll_work_experience"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/grey_e6"/>
+
+            <TextView
+                android:id="@+id/customer_detail_txt_work_exper_more"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="11dp"
+                android:paddingTop="11dp"
+                android:text="更多"
+                android:textColor="@color/main_blue"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/white_bg_shape"
+            android:orientation="vertical"
+            android:paddingTop="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="教育经历"
+                    android:textColor="@color/black_32"
+                    android:textSize="15sp"/>
+
+                <ImageView
+                    android:id="@+id/customer_detail_iv_edit3"
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/icon_bule_edit"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/customer_detail_ll_education_experience"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/grey_e6"/>
+
+            <TextView
+                android:id="@+id/customer_detail_txt_education_more"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="11dp"
+                android:paddingTop="11dp"
+                android:text="更多"
+                android:textColor="@color/main_blue"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/white_bg_shape"
+            android:orientation="vertical"
+            android:paddingTop="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="个人标签"
+                    android:textColor="@color/black_32"
+                    android:textSize="15sp"/>
+
+                <ImageView
+                    android:id="@+id/customer_detail_iv_edit4"
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/icon_bule_edit"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/customer_detail_ll_specialty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/grey_e6"/>
+
+            <TextView
+                android:id="@+id/customer_detail_txt_specialty_more"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="11dp"
+                android:paddingTop="11dp"
+                android:text="更多"
+                android:textColor="@color/main_blue"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

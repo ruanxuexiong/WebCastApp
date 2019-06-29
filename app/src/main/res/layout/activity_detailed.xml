@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/view_toolbar_common" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_bottom"
+        android:layout_below="@+id/toolbar"
+        android:orientation="vertical">
+
+        <com.android.common.ui.pull.PullToRefreshLayout
+            android:id="@+id/refresh_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/refresh_head" />
+
+            <!-- 支持所有实现Pullable接口的View -->
+
+            <com.android.common.ui.pull.pullableview.PullableListView
+                android:id="@+id/content_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/grey_f5"
+                android:divider="@null" />
+
+            <include layout="@layout/load_more" />
+        </com.android.common.ui.pull.PullToRefreshLayout>
+
+        <include layout="@layout/default_load_fail" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/grey_dd"
+            android:visibility="gone" />
+
+        <com.android.nana.widget.DrawableTextView
+            android:id="@+id/tv_btn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/edit_bg_shape"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="发消息"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            app:leftDrawableHeight="16dp"
+            app:leftDrawableWidth="24dp" />
+        <!-- app:leftDrawable="@drawable/icon_video_show"-->
+
+        <com.android.nana.widget.DrawableTextView
+            android:id="@+id/tv_msg"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/edit_bg_shape"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="发消息"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:visibility="gone"
+            app:leftDrawableHeight="16dp"
+            app:leftDrawableWidth="24dp" />
+
+        <LinearLayout
+            android:id="@+id/ll_send_msg"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="7dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_send_msg"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/user_details_shape"
+                android:gravity="center"
+                android:text="发消息"
+                android:textColor="@color/green_33"
+                android:textSize="17dp" />
+
+            <com.android.nana.widget.DrawableTextView
+                android:id="@+id/tv_call"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/edit_bg_shape"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="立即联系"
+                android:textColor="@color/white"
+                android:textSize="17dp"
+                android:visibility="gone"
+                app:leftDrawable="@drawable/icon_video_show"
+                app:leftDrawableHeight="16dp"
+                app:leftDrawableWidth="24dp" />
+
+            <com.android.nana.widget.DrawableTextView
+                android:id="@+id/tv_agree"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/edit_bg_shape"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="同意"
+                android:textColor="@color/white"
+                android:textSize="17dp"
+                app:leftDrawableHeight="16dp"
+                app:leftDrawableWidth="24dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

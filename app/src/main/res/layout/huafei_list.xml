@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/huafei_bg"
+    android:paddingTop="@dimen/dp_6"
+    android:paddingBottom="@dimen/dp_6"
+
+
+    >
+
+    <TextView
+        android:id="@+id/huafei_money1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1元"
+        android:textSize="@dimen/sp_20"
+        android:textColor="#2AA3EF"
+        />
+    <TextView
+        android:id="@+id/huafei_money2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="售价:1.00元"
+        android:textSize="@dimen/sp_14"
+        android:textColor="#9BCFEF"
+        />
+</LinearLayout>

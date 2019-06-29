@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/main_color"
+            android:theme="@style/MainAppBar">
+
+            <LinearLayout
+                android:id="@+id/ll_header_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/header_offset"
+                android:orientation="vertical"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/toolbar_rl"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/main_color"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:id="@+id/iv_search"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center"
+                            android:background="@color/main_color"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:maxWidth="252dp"
+                            android:singleLine="true"
+                            android:src="@drawable/icon_find_search" />
+
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/iv_camera"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/bg_primary_clickable"
+                            android:drawableLeft="@drawable/icon_black_camera"
+                            android:gravity="center"
+                            android:paddingLeft="12dp"
+                            android:paddingRight="12dp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:orientation="horizontal">
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:id="@+id/tv_add"
+                                style="@style/TextView.ToolBarAction"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/bg_primary_clickable"
+                                android:drawableLeft="@drawable/icon_add"
+                                android:gravity="center_vertical"
+                                android:padding="12dp"
+                                android:textSize="14dp" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:id="@+id/toolbar_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/grey_dd" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#FCFCFC"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="10dp">
+
+                        <com.android.nana.ui.RoundImageView
+                            android:id="@+id/iv_head"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/img_df" />
+
+                        <ImageView
+                            android:id="@+id/iv_id"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/icon_authen"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/ll_head"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="fill_horizontal|center"
+                            android:text="分享新鲜事给附近朋友"
+                            android:textColor="@color/green_33"
+                            android:textSize="16dp" />
+
+                        <LinearLayout
+                            android:id="@+id/ll_msg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:gravity="center"
+                            android:visibility="gone">
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="34dp"
+                                android:layout_marginRight="15dp"
+                                android:background="@drawable/shape_friend"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:id="@+id/iv_avatar"
+                                    android:layout_width="24dp"
+                                    android:layout_height="24dp"
+                                    android:layout_marginBottom="4dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="4dp"
+                                    android:src="@drawable/icon_logo"
+                                    app:civ_border_color="@color/white"
+                                    app:civ_border_width="1dp" />
+
+                                <TextView
+                                    android:id="@+id/tv_msg"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="8.5dp"
+                                    android:ellipsize="end"
+                                    android:maxLines="1"
+                                    android:singleLine="true"
+                                    android:text="6条新消息"
+                                    android:textColor="@color/white"
+                                    android:textSize="14dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/grey_dd" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_behavior="@string/behavior_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:background="@color/white">
+
+                    <ImageView
+                        android:id="@+id/iv_back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:padding="8dp"
+                        android:src="@drawable/icon_nav_close"
+                        android:visibility="gone" />
+
+
+                    <com.flyco.tablayout.SlidingTabLayout
+                        android:id="@+id/layout_tab"
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp"
+                        android:layout_toRightOf="@+id/iv_back"
+                        android:background="#FCFCFC"
+                        app:tl_divider_color="@color/gray_dd"
+                        app:tl_divider_padding="13dp"
+                        app:tl_divider_width="1dp"
+                        app:tl_indicator_color="@color/green"
+                        app:tl_indicator_height="2dp"
+                        app:tl_indicator_width_equal_title="true"
+                        app:tl_tab_padding="30dp"
+                        app:tl_tab_space_equal="true"
+                        app:tl_textSelectColor="@color/green_33"
+                        app:tl_textUnselectColor="@color/green_99"
+                        app:tl_textsize="16dp"
+                        app:tl_underline_height="1dp" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/grey_dd" />
+
+        </android.support.design.widget.AppBarLayout>
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        </android.support.v4.view.ViewPager>
+
+
+        <!--禁止viewpager 滑动-->
+    <!--    <com.android.nana.find.IndexViewPager
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </com.android.nana.find.IndexViewPager>-->
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</RelativeLayout>

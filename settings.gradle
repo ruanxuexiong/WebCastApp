@@ -1,0 +1,1 @@
+include ':app', 'common', ':IMLib', ':IMKit', ':Recognizer', ':CallLib', ':CallKit',  ':picture_library', ':ucrop', ':filter-lib', ':magicindicator',':nicevideoplayer','superweb'

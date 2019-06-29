@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_toolbar_common" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/ac_et_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/bg_edit_text_white"
+            android:drawableLeft="@drawable/ic_search"
+            android:drawablePadding="8dp"
+            android:drawableRight="@drawable/icon_close"
+            android:focusableInTouchMode="true"
+            android:hint="搜索"
+            android:imeActionLabel=""
+            android:imeOptions="actionSearch"
+            android:inputType="textNoSuggestions"
+            android:maxLines="1"
+            android:textColor="@color/green_33"
+            android:textColorHint="@color/green_99"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/ac_tv_seal_search_more_info_title"
+            style="@style/ac_search_list_view_item"
+            android:text="聊天记录" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/ac_lv_more_info_list_detail_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/ac_tv_search_no_results"
+        style="@style/ac_search_no_results" />
+
+
+</LinearLayout>

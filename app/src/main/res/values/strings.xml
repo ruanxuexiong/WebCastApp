@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">哪哪</string>
+    <!--科大讯飞-->
+    <string name="app_id">5b8f7978</string>
+
+    <!-- 我的收入 -->
+    <string name="income_total">总收入</string>
+    <string name="income_statistics">收入统计</string>
+    <string name="recharge">充值</string>
+    <string name="withdraw">提现</string>
+    <string name="set_withdraw_pwd">设置提现密码</string>
+    <string name="modify_withdraw_pwd">修改提现密码</string>
+    <string name="find_withdraw_pwd">找回提现密码</string>
+    <string name="old_pwd">旧密码</string>
+    <string name="new_pwd">新密码</string>
+    <string name="ensure_pwd">确认密码</string>
+    <string name="ensure_withdraw_pwd">确认提现密码</string>
+    <string name="set_new_withdraw_pwd">设置6位提现密码</string>
+    <string name="reset_pwd">重置密码</string>
+    <string name="phone_number">手机号码</string>
+    <string name="input_phone_number">请输入手机号码</string>
+    <string name="send_token">发送验证码</string>
+    <string name="token">验证码</string>
+    <string name="input_token">请输入短信验证码</string>
+    <string name="recharge_number">充值金额</string>
+    <string name="recharge_way">充值方式</string>
+    <string name="pay_weixin">微信支付</string>
+    <string name="pay_ali">支付宝</string>
+    <!--wh-->
+    <string name="income_all">全部</string>
+    <string name="income_income">收入</string>
+    <string name="income_consume">支出</string>
+    <string name="income_income_with_colon">收入:</string>
+    <string name="income_consume_with_colon">支出:</string>
+    <string name="income_detail">明细说明</string>
+    <string name="income_num">金额</string>
+    <string name="income_date">日期</string>
+    <string name="income_detail_pay">支付给</string>
+    <string name="income_me">我</string>
+    <string name="withdraw_num">金额(元)</string>
+    <string name="input_money_num">请填写金额</string>
+    <string name="withdraw_pwd">提现密码</string>
+    <string name="download_success">下载完成</string>
+    <string name="multiple_status_view_tips_empty">暂无数据</string>
+    <string name="multiple_status_view_tips_search">该用户不存在</string>
+    <string name="multiple_status_view_no_comment">暂无评论，你先来说说看</string>
+    <string name="multiple_status_view_tips_recruit">发布职位后，将为您推荐一大波人才</string>
+    <string name="multiple_status_view_tips_empty_group">该群聊已被解散</string>
+    <string name="multiple_status_view_tips_empty_msg">暂无消息</string>
+    <string name="multiple_status_view_tips_hr_empty">(您正在使用招聘模式)</string>
+    <string name="multiple_status_view_tips_no_network">无网络，点击重试</string>
+    <string name="multiple_status_view_tips_error">加载失败，点击重试</string>
+
+    <string name="viewpager_indicator">%1$d/%2$d</string>
+    <string name="user_info">*</string>
+    <string name="read_more">全文</string>
+    <string name="read_less">收起</string>
+
+    <string name="me_record">见面记录</string>
+    <string name="me_see">谁要见我</string>
+    <string name="me_see_who">我要见谁</string>
+
+    <string name="ac_search_no_result_pre">没有搜到</string>
+    <string name="ac_search_no_result_suffix">相关的信息</string>
+    <string name="ac_search_chat_title">聊天记录</string>
+    <string name="ac_search_chat_detail">共%1$d条与</string>
+    <string name="ac_search_chat_detail_one">共</string>
+    <string name="ac_search_chat_detail_two">条与</string>
+    <string name="ac_search_chat_detail_three">相关的聊天记录</string>
+    <string name="group_notice_prefix">\@所有人\n</string>
+    <string name="ac_share_receiver_from">来自：%1$s</string>
+
+    <string name="load_more_text">正在加载...</string>
+    <string name="progressActivityErrorButton">重新加载</string>
+    <string name="progressActivityEmptyTitlePlaceholder">未加载到任何内容!</string>
+    <string name="progressActivityEmptyContentPlaceholder">We couldn\'t find anything. Tap the button to take your first image</string>
+    <string name="progressActivityErrorTitlePlaceholder">No Connection</string>
+    <string name="progressActivityErrorContentPlaceholder">网络不给力哦，加载失败</string>
+
+
+    <!-- 语言 -->
+    <string-array name="language_entries">
+        <item>普通话</item>
+        <item>粤语</item>
+        <item>英语</item>
+    </string-array>
+
+    <string-array name="punc_entries">
+        <item>有标点</item>
+        <item>无标点</item>
+    </string-array>
+
+    <string-array name="punc_values">
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="dwa_entries">
+        <item>开启</item>
+        <item>关闭</item>
+    </string-array>
+
+    <string name="pref_key_iat_show">iat_show</string>
+    <string name="pref_title_iat_show">显示听写界面</string>
+    <string name="pref_key_translate">translate</string>
+    <string name="pref_title_translate">翻译</string>
+    <string name="behavior_header">com.android.webcast.find.weight.HeaderPagerBehavior</string>
+    <string name="behavior_content">com.android.webcast.find.weight.ContentBehavior</string>
+    <string name="rc_plugin_recognize">语音文字</string>
+    <string name="rc_custom_video_plugin_recognize">视频</string>
+
+    <item name="selector_view" type="id"></item>
+    <item name="rect_view" type="id"></item>
+
+    <string name="ar_record">开始录制</string>
+    <string name="ar_stop">停止录制</string>
+    <string name="speed_super_slow">极慢"</string>
+    <string name="speed_slow">慢"</string>
+    <string name="speed_normal">正常"</string>
+    <string name="speed_fast">快"</string>
+    <string name="speed_super_fast">极快"</string>
+
+
+    <string name="wallet_tv">温馨提示</string>
+    <string name="wallet_tv_1">1.申请提现审核成功后，金额≤10元秒到账，金额＞10元预计1-3工作日到账\n2.提现过程如出现异常，请联系：kf@nanapal.com</string>
+    <string name="ali_pay">  提现到支付宝</string>
+    <string name="bank">  提现到储蓄卡</string>
+
+    <string name="prepaid_tv">1.充值成功后，需要等待1-3个工作日，话费才会到账哦 \n2.提现过程如出现异常，请联系：kf@nanapal.com</string>
+
+</resources>

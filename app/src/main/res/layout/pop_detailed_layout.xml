@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:background="#FCFCFC"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_group"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="15dp">
+
+        <com.android.nana.widget.RadioGroupEx
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radio_all"
+                android:layout_width="98dp"
+                android:layout_height="35dp"
+                android:background="@drawable/screen_selector_money"
+                android:button="@null"
+                android:gravity="center"
+                android:text="全部"
+                android:textColor="@drawable/radio_button_text_selector"
+                android:textSize="16dp" />
+
+            <RadioButton
+                android:id="@+id/radio_exp"
+                android:layout_width="98dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/screen_selector_money"
+                android:button="@null"
+                android:gravity="center"
+                android:text="支出"
+                android:textColor="@drawable/radio_button_text_selector"
+                android:textSize="16dp" />
+
+            <RadioButton
+                android:id="@+id/radio_income"
+                android:layout_width="98dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/screen_selector_money"
+                android:button="@null"
+                android:gravity="center"
+                android:text="收入"
+                android:textColor="@drawable/radio_button_text_selector"
+                android:textSize="16dp" />
+
+            <RadioButton
+                android:id="@+id/radio_recharge"
+                android:layout_width="98dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/screen_selector_money"
+                android:button="@null"
+                android:gravity="center"
+                android:text="充值"
+                android:textColor="@drawable/radio_button_text_selector"
+                android:textSize="16dp" />
+
+            <RadioButton
+                android:id="@+id/radio_put"
+                android:layout_width="98dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/screen_selector_money"
+                android:button="@null"
+                android:gravity="center"
+                android:text="提现"
+                android:textColor="@drawable/radio_button_text_selector"
+                android:textSize="16dp" />
+
+        </com.android.nana.widget.RadioGroupEx>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">哪哪</string>
+
+    <!-- 刷新pull -->
+    <string name="pull_to_refresh">下拉可以刷新</string>
+    <string name="release_to_refresh">松开立即刷新</string>
+    <string name="refreshing">正在刷新...</string>
+    <string name="refresh_succeed">刷新数据成功</string>
+    <string name="refresh_fail">刷新数据失败</string>
+    <string name="pullup_to_load">上拉加载更多</string>
+    <string name="release_to_load">松开立即加载</string>
+    <string name="loading">正在加载...</string>
+    <string name="load_succeed">加载数据成功</string>
+    <string name="load_fail">加载数据失败</string>
+    <string name="load_null">没有更多数据</string>
+    <string name="default_load_fail_str">喵呜~网络不给力啊 ，\n刷新下试试吧</string>
+    <string name="default_load_null_str">喵呜~没有数据啊 ，\n刷新下试试吧</string>
+
+    <string name="pickerview_cancel">取消</string>
+    <string name="pickerview_submit">确定</string>
+    <string name="pickerview_year">年</string>
+    <string name="pickerview_month">月</string>
+    <string name="pickerview_day">日</string>
+    <string name="pickerview_hours">时</string>
+    <string name="pickerview_minutes">分</string>
+    <string name="pickerview_seconds">秒</string>
+
+</resources>

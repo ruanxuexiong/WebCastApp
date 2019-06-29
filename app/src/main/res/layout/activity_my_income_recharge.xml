@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_f5"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_header_layout" />
+
+    <!--充值金额-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="6dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="6dp">
+
+        <TextView
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="充值金额"
+            android:textColor="@color/grey_96"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/my_income_et_recharge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/grey_light_bg_shape"
+            android:inputType="numberDecimal"
+            android:paddingBottom="9dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="9dp"
+            android:textColor="@color/black_32"
+            android:textColorHint="@color/grey_e6"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!--充值方式-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_vertical|bottom"
+        android:paddingLeft="15dp"
+        android:text="@string/recharge_way"
+        android:textColor="@color/gray"
+        android:textSize="15sp" />
+
+    <RadioGroup
+        android:id="@+id/my_income_rg_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/my_income_rb_pay_wx"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:button="@null"
+            android:checked="true"
+            android:drawableLeft="@drawable/icon_recharge_weixin"
+            android:drawablePadding="15dp"
+            android:drawableRight="@drawable/income_checkbox_selector"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="@string/pay_weixin"
+            android:textColor="@color/black_32"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/grey_e6" />
+
+        <RadioButton
+            android:id="@+id/my_income_rb_pay_ali"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:button="@null"
+            android:drawableLeft="@drawable/icon_recharge_ali"
+            android:drawablePadding="15dp"
+            android:drawableRight="@drawable/income_checkbox_selector"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="@string/pay_ali"
+            android:textColor="@color/black_32"
+            android:textSize="15sp" />
+
+    </RadioGroup>
+
+    <!--充值-->
+    <TextView
+        android:id="@+id/my_income_txt_commit"
+        style="@style/bule_big_button_style"
+        android:layout_marginTop="25dp"
+        android:text="充值" />
+</LinearLayout>

@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_header_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:text="城市"
+                android:textColor="@color/green_33"
+                android:textSize="14dp" />
+
+
+            <TextView
+                android:id="@+id/tv_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/screen_city_shape"
+                android:drawablePadding="8dp"
+                android:drawableRight="@drawable/icon_three"
+                android:paddingBottom="7dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="7dp"
+                android:text="不限"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/grey_dd" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:text="性别"
+                android:textColor="@color/green_33"
+                android:textSize="14dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radio_unlimited"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:background="@drawable/screen_selector_sex"
+                        android:button="@null"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:paddingBottom="7dp"
+                        android:paddingLeft="19dp"
+                        android:paddingRight="19dp"
+                        android:paddingTop="7dp"
+                        android:text="不限"
+                        android:textColor="@drawable/radio_button_text_selector"
+                        android:textSize="16dp" />
+
+                    <RadioButton
+                        android:id="@+id/radio_male"
+                        android:layout_width="70dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/screen_selector_sex"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:paddingBottom="7dp"
+                        android:paddingLeft="19dp"
+                        android:paddingRight="19dp"
+                        android:paddingTop="7dp"
+                        android:text="男"
+                        android:textColor="@drawable/radio_button_text_selector"
+                        android:textSize="16dp" />
+
+                    <RadioButton
+                        android:id="@+id/radio_female"
+                        android:layout_width="70dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/screen_selector_sex"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:paddingBottom="7dp"
+                        android:paddingLeft="19dp"
+                        android:paddingRight="19dp"
+                        android:paddingTop="7dp"
+                        android:text="女"
+                        android:textColor="@drawable/radio_button_text_selector"
+                        android:textSize="16dp" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/grey_dd" />
+
+            <LinearLayout
+                android:id="@+id/ll_meet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="见面金额"
+                    android:textColor="@color/green_33"
+                    android:textSize="14dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/et_min"
+                        android:layout_width="100dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/screen_grey_bg_shape"
+                        android:gravity="center"
+                        android:hint="最低"
+                        android:inputType="numberDecimal"
+                        android:textColor="@color/green_99"
+                        android:textSize="16dp" />
+
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@color/grey_dd" />
+
+                    <EditText
+                        android:id="@+id/et_hig"
+                        android:layout_width="100dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/screen_grey_bg_shape"
+                        android:gravity="center"
+                        android:hint="最高"
+                        android:inputType="numberDecimal"
+                        android:textColor="@color/green_99"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/grey_dd" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/ll_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="个人标签"
+                            android:textColor="@color/green_33"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="(可多选)"
+                            android:textColor="@color/green_33"
+                            android:textSize="10dp" />
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/tv_right"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="12.3dp"
+                        android:drawablePadding="8dp"
+                        android:drawableRight="@drawable/icon_arrow_right"
+                        android:gravity="right"
+                        android:text="选择"
+                        android:textColor="@color/green_99"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+
+                <com.android.nana.widget.LabelsView
+                    android:id="@+id/lv_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:minHeight="25dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:visibility="gone"
+                    app:labelBackground="@drawable/screen_labels_shape"
+                    app:labelTextColor="@color/white"
+                    app:labelTextPaddingBottom="7.5dp"
+                    app:labelTextPaddingLeft="10dp"
+                    app:labelTextPaddingRight="10dp"
+                    app:labelTextPaddingTop="7.5dp"
+                    app:labelTextSize="14sp"
+                    app:lineMargin="10dp"
+                    app:selectType="SINGLE"
+                    app:wordMargin="10dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/grey_dd" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_job"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="求职意向"
+                    android:textColor="@color/green__66"
+                    android:textSize="14dp" />
+
+
+                <LinearLayout
+                    android:id="@+id/ll_position"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="期望职位"
+                                android:textColor="@color/green_33"
+                                android:textSize="16dp" />
+
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="12.3dp"
+                            android:drawablePadding="8dp"
+                            android:drawableRight="@drawable/icon_arrow_right"
+                            android:gravity="right"
+                            android:text="选择"
+                            android:textColor="@color/green_99"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+
+                    <com.android.nana.widget.LabelsView
+                        android:id="@+id/lv_position_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="25dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp"
+                        android:visibility="gone"
+                        app:labelBackground="@drawable/screen_labels_shape"
+                        app:labelTextColor="@color/white"
+                        app:labelTextPaddingBottom="7.5dp"
+                        app:labelTextPaddingLeft="10dp"
+                        app:labelTextPaddingRight="10dp"
+                        app:labelTextPaddingTop="7.5dp"
+                        app:labelTextSize="14sp"
+                        app:lineMargin="10dp"
+                        app:selectType="SINGLE"
+                        app:wordMargin="10dp" />
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/grey_dd" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_trade"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="期望行业"
+                                android:textColor="@color/green_33"
+                                android:textSize="16dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="(可选3项)"
+                                android:textColor="@color/green_33"
+                                android:textSize="10dp" />
+
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="12.3dp"
+                            android:drawablePadding="8dp"
+                            android:drawableRight="@drawable/icon_arrow_right"
+                            android:gravity="right"
+                            android:text="选择"
+                            android:textColor="@color/green_99"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+
+                    <com.android.nana.widget.LabelsView
+                        android:id="@+id/lv_trade_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="25dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp"
+                        android:visibility="gone"
+                        app:labelBackground="@drawable/screen_labels_shape"
+                        app:labelTextColor="@color/white"
+                        app:labelTextPaddingBottom="7.5dp"
+                        app:labelTextPaddingLeft="10dp"
+                        app:labelTextPaddingRight="10dp"
+                        app:labelTextPaddingTop="7.5dp"
+                        app:labelTextSize="14sp"
+                        app:lineMargin="10dp"
+                        app:selectType="SINGLE"
+                        app:wordMargin="10dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/grey_dd" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_salary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="期望月薪"
+                                android:textColor="@color/green_33"
+                                android:textSize="16dp" />
+
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="12.3dp"
+                            android:drawablePadding="8dp"
+                            android:drawableRight="@drawable/icon_arrow_right"
+                            android:gravity="right"
+                            android:text="选择"
+                            android:textColor="@color/green_99"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+
+                    <com.android.nana.widget.LabelsView
+                        android:id="@+id/lv_salary_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="25dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp"
+                        android:visibility="gone"
+                        app:labelBackground="@drawable/screen_labels_shape"
+                        app:labelTextColor="@color/white"
+                        app:labelTextPaddingBottom="7.5dp"
+                        app:labelTextPaddingLeft="10dp"
+                        app:labelTextPaddingRight="10dp"
+                        app:labelTextPaddingTop="7.5dp"
+                        app:labelTextSize="14sp"
+                        app:lineMargin="10dp"
+                        app:selectType="SINGLE"
+                        app:wordMargin="10dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/grey_dd" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

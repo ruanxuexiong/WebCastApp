@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/uitable_baseic_item_top_space"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/grey_f5" />
+
+    <View
+        android:id="@+id/uitable_baseic_item_top_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/grey_e6" />
+
+    <RelativeLayout
+        android:id="@+id/uitable_baseic_item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/grey_click_selector">
+
+        <ImageView
+            android:id="@+id/uitable_baseic_item_iv_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp" />
+
+        <TextView
+            android:id="@+id/uitable_baseic_item_txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/uitable_baseic_item_iv_image"
+            android:gravity="center_vertical"
+            android:paddingBottom="13dp"
+            android:paddingTop="13dp"
+            android:text="标题"
+            android:textColor="@color/black_32"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/uitable_baseic_item_txt_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="25dp"
+            android:text="标题描述"
+            android:textColor="@color/grey_96"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/uitable_baseic_item_iv_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/icon_album_data" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/uitable_baseic_item_bot_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/grey_e6" />
+
+    <View
+        android:id="@+id/uitable_baseic_item_bot_space"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/grey_f5" />
+
+</LinearLayout>

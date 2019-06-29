@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/map_pao"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_55"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_gravity="center"
+        android:textColor="@color/bar_grey"
+        android:gravity="center"
+       />
+
+    <Button
+        android:id="@+id/btn_detail"
+        android:layout_width="70dp"
+        android:layout_height="@dimen/dp_55"
+        android:gravity="center"
+        android:background="@drawable/map_bg_select"
+        android:text="马上通知"
+        android:visibility="gone"
+        android:textColor="@color/white" />
+</LinearLayout>

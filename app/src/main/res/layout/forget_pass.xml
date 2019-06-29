@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_toolbar_common" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机号    "
+            android:textColor="@color/black_32"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/forget_pass_edit_phone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/grey_light_bg_shape"
+            android:editable="false"
+            android:focusable="false"
+            android:inputType="number"
+            android:maxLength="11"
+            android:paddingBottom="9dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="9dp"
+            android:textColor="@color/black_32"
+            android:textColorHint="@color/grey_e6"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/forget_pass_txt_get_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/green_null_bg"
+            android:gravity="center"
+            android:paddingBottom="9dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="9dp"
+            android:text="获取验证码"
+            android:textColor="@color/main_blue"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="验证码    "
+            android:textColor="@color/black_32"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/forget_pass_edit_verification_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/grey_light_bg_shape"
+            android:hint="请输入短信验证码"
+            android:inputType="number"
+            android:maxLength="4"
+            android:paddingBottom="9dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="9dp"
+            android:textColor="@color/black_32"
+            android:textColorHint="@color/grey_e6"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/forget_pass_ll_newpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="新密码    "
+            android:textColor="@color/black_32"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/forget_pass_edit_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/grey_light_bg_shape"
+            android:hint="密码不少于6位"
+            android:inputType="textPassword"
+            android:paddingBottom="9dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="9dp"
+            android:textColor="@color/black_32"
+            android:textColorHint="@color/grey_e6"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/forget_pass_txt_update"
+        style="@style/bule_big_button_style"
+        android:layout_marginTop="25dp"
+        android:text="确认" />
+</LinearLayout>

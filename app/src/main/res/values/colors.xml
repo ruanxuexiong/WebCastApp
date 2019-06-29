@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- <color name="main_color">#4388BF</color>-->
+    <color name="main_color">#2AA3EF</color>
+    <color name="main_blue">#2AA3EF</color>
+    <!-- <color name="main_blue">#0A83E6</color>-->
+
+    <color name="blue_huati">#586C94</color>
+    <color name="red">#FFD81A30</color>
+    <color name="black">#000000</color>
+    <color name="gray">#969696</color>
+    <color name="green_light">#74BB30</color>
+    <color name="green_66">#66A530</color>
+    <color name="green_5c">#5C9B29</color>
+    <color name="blue_007">#007AFF</color>
+    <color name="d1_d1">#D1D1D1</color>
+
+
+    <color name="grey_f5">#F5F5F5</color>
+    <color name="grey_e6">#E6E6E6</color>
+    <color name="bule_42">#42C0E4</color>
+    <color name="grey_ef">#efefef</color>
+    <color name="color_f6">#f6f6f6</color>
+    <color name="grey_99">#999</color>
+
+    <color name="bottom_menu_btn_bg_common_color">#FFFFFF</color>
+    <color name="bottom_menu_btn_bg_press_color">#EEEEEE</color>
+    <color name="bottom_menu_btn_text_stress_color">#FF0000</color>
+    <color name="bottom_menu_layout_color">#00000000</color>
+    <color name="gray_gray">#eeeeee</color>
+    <color name="text_secondary">#535353</color>
+    <!--覆盖颜色-->
+    <color name="bgColor_overlay">#60000000</color>
+    <!--窗口背景颜色-->
+    <color name="bgColor_alertview_alert">#f8f8f8</color>
+    <color name="bgColor_alertview_alert_start">#f0f0f0</color>
+    <!--标题颜色-->
+    <color name="textColor_alert_title">#000000</color>
+    <color name="textColor_actionsheet_title">#8f8f8f</color>
+    <!--消息颜色-->
+    <color name="textColor_alert_msg">#000000</color>
+    <color name="textColor_actionsheet_msg">#8f8f8f</color>
+    <!--线条颜色-->
+    <color name="bgColor_divier">#d7d7db</color>
+    <!--取消按钮颜色-->
+    <color name="textColor_alert_button_cancel">#0A83E6</color>
+    <!-- <color name="textColor_alert_button_cancel">#1AAD1C</color>-->
+    <!--高亮按钮颜色-->
+    <color name="textColor_alert_button_destructive">#0A83E6</color>
+    <!--  <color name="textColor_alert_button_destructive">#1AAD1C</color>-->
+    <!--普通按钮文字颜色-->
+    <!-- <color name="textColor_alert_button_others">#0076FF</color>-->
+    <color name="textColor_alert_button_others">#2AA3EF</color>
+    <color name="blue_A1">#2AA3EF</color>
+    <!--点击颜色-->
+    <color name="bgColor_alert_button_press">#EAEAEA</color>
+    <!--actionsheet模式的取消按钮背景颜色-->
+    <color name="bgColor_actionsheet_cancel_nor">#ffffff</color>
+    <color name="gules">#F54343</color>
+
+    <color name="red_normal">#FF6600</color>
+    <color name="red_fef35l">#FE3F35</color>
+    <color name="red_pressed">#FF6666</color>
+    <color name="activity_red">#FC624D</color>
+    <color name="view_toolbar">#2D2C33</color>
+    <color name="view_toolbar_hide">#00ffffff</color>
+    <color name="view_toolbar_common">#2D2C29</color>
+    <color name="background">#E8EBF0</color>
+    <color name="green">#2AA3EF</color>
+    <color name="green_4c4a4a">#4C4A4A</color>
+
+    <color name="bg_horizontal_btn_selected">#70a3a4a7</color>
+    <color name="bg_horizontal_btn_normal">#eeeeee</color>
+    <color name="mc">#c8ccd1</color>
+    <color name="grey">#8C8C8C</color>
+
+    <color name="text1">#FFFFFF</color>
+    <color name="text2">#ffefa8</color>
+    <color name="text3">#fccaff</color>
+    <color name="text4">#61dcff</color>
+    <color name="text5">#ffc502</color>
+    <color name="text6">#ff8621</color>
+    <color name="text7">#ff696a</color>
+    <color name="text8">#7777ff</color>
+    <color name="text9">#ff8621</color>
+    <color name="text10">#00ff00</color>
+    <color name="text11">#ff0000</color>
+    <color name="text12">#0000ff</color>
+
+    <color name="paint1">#FFFFFF</color>
+    <color name="paint2">#000000</color>
+    <color name="paint3">#ffefa8</color>
+    <color name="paint4">#fccaff</color>
+    <color name="paint5">#61dcff</color>
+    <color name="paint6">#ffc502</color>
+    <color name="paint7">#ff8621</color>
+    <color name="paint8">#7777ff</color>
+    <color name="paint9">#00ff00</color>
+    <color name="paint10">#0000ff</color>
+    <color name="ff4f4f">#FF4F4F</color>
+
+    <color name="ff8080">#FF8080</color>
+    <color name="c2f0">#78C2F0</color>
+    <color name="ffb">#FFB380</color>
+    <color name="ffc">#65CFFC</color>
+
+    <color name="textSelectorBG">#2d2b39</color>
+    <color name="speedTextNormal">#ffdddddd</color>
+</resources>

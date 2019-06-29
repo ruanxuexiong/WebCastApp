@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_header_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="42dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/icon_security" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="绑定会让您的账号更加安全。\n完成绑定后，您还可以通过手机号登录。"
+                android:textColor="@color/green__66"
+                android:textSize="16dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="37dp"
+                android:layout_marginRight="38dp"
+                android:layout_marginTop="35dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/et_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="47dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/register_btn_send"
+                        android:layout_toStartOf="@+id/register_btn_send"
+                        android:background="@drawable/bg_input"
+                        android:hint="请输入您的手机号"
+                        android:inputType="phone"
+                        android:maxLength="11" />
+
+                    <com.android.nana.widget.CountdownButton
+                        android:id="@+id/register_btn_send"
+                        android:layout_width="wrap_content"
+                        android:layout_height="26dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/login_welcome_selector"
+                        android:gravity="center"
+                        android:text="获取验证码"
+                        android:textColor="@color/right"
+                        android:textSize="14sp"
+                        app:pressedBackgroundColor="@color/text_x"
+                        app:radiusStateButton="4dp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/grey_dd" />
+
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/et_code"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:layout_marginLeft="37dp"
+                android:layout_marginRight="37dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bg_input"
+                android:hint="请输入验证码"
+                android:inputType="number"
+                android:maxLength="4" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="37dp"
+                android:layout_marginRight="38dp"
+                android:background="@color/grey_dd" />
+
+
+            <com.android.nana.widget.StateButton
+                android:id="@+id/btn_reset"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="37dp"
+                android:layout_marginRight="37dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="立即绑定"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                app:normalBackgroundColor="@color/right"
+                app:pressedBackgroundColor="@color/text_x"
+                app:radiusStateButton="4dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/common_header_layout" />
+
+
+</LinearLayout>

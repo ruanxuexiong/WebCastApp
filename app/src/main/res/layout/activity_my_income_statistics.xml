@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_f5"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_header_layout" />
+
+    <RadioGroup
+        android:id="@+id/my_income_statistics_tab_rg_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingBottom="1dp"
+        android:paddingTop="1dp">
+
+        <RadioButton
+            android:id="@+id/my_income_statistics_tab_rb_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_left_half_selector"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:paddingBottom="7dp"
+            android:paddingLeft="35dp"
+            android:paddingRight="35dp"
+            android:paddingTop="7dp"
+            android:text="全部"
+            android:textColor="@drawable/tab_text_white_selector"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/my_income_statistics_tab_rb_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_middle_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingBottom="7dp"
+            android:paddingLeft="35dp"
+            android:paddingRight="35dp"
+            android:paddingTop="7dp"
+            android:text="收入"
+            android:textColor="@drawable/tab_text_white_selector"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/my_income_statistics_tab_rb_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_right_half_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingBottom="7dp"
+            android:paddingLeft="35dp"
+            android:paddingRight="35dp"
+            android:paddingTop="7dp"
+            android:text="支出"
+            android:textColor="@drawable/tab_text_white_selector"
+            android:textSize="14sp" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/my_income_statistics_txt_sr"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="收入"
+            android:textSize="15sp"
+            android:textColor="@color/grey_64"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/my_income_statistics_txt_zc"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="支出"
+            android:textSize="15sp"
+            android:textColor="@color/grey_64"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/my_income_statistics_tab_content"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+</LinearLayout>

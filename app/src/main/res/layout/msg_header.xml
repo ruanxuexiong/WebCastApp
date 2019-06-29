@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:id="@+id/rl_search"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/background"
+            android:gravity="center"
+            android:orientation="vertical">
+
+           <com.android.nana.widget.DrawableCenterTextView
+                android:id="@+id/tv_search"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+               android:layout_marginRight="8dp"
+               android:layout_marginLeft="8dp"
+                android:background="@drawable/shape_corner_down"
+                android:drawableLeft="@drawable/ic_san_search"
+                android:drawablePadding="1dp"
+                android:enabled="false"
+                android:focusable="true"
+               android:textSize="16dp"
+                android:padding="8dp"
+                android:text="搜索"
+                android:textColor="#6A747E" />
+        </LinearLayout>
+
+        <include layout="@layout/activity_msg_dialog" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_want"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="70dp"
+        android:background="@drawable/grey_click_selector"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="55dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/icon_want" />
+
+
+            <net.soulwolf.widget.speedyselector.widget.SelectorTextView
+                android:id="@+id/tv_want_num"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center"
+                android:background="@color/bg_light_red"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="0"
+                android:textColor="@color/bg_light_red"
+                android:textSize="10dp"
+                android:visibility="gone"
+                app:spRadius="10dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left|center"
+                android:paddingLeft="5dp"
+                android:text="我联系谁"
+                android:textColor="@color/green_00"
+                android:textSize="17dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true">
+
+                <TextView
+                    android:id="@+id/tv_consult_me"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/icon_fillet"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="@color/bg_light_red"
+                    android:textSize="10dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="15.3dp"
+                    android:src="@drawable/icon_album_data" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="12dp"
+        android:visibility="gone"
+        android:background="@color/grey_dd" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_who"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/grey_click_selector"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="55dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/icon_who" />
+
+
+            <net.soulwolf.widget.speedyselector.widget.SelectorTextView
+                android:id="@+id/tv_who_num"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center"
+                android:background="@color/bg_light_red"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="0"
+                android:textColor="@color/bg_light_red"
+                android:textSize="10dp"
+                android:visibility="gone"
+                app:spRadius="10dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left|center"
+                android:paddingLeft="5dp"
+                android:text="谁联系我"
+                android:textColor="@color/green_00"
+                android:textSize="17dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true">
+
+                <TextView
+                    android:id="@+id/tv_me_consult"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/icon_fillet"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="@color/bg_light_red"
+                    android:textSize="10dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="15.3dp"
+                    android:src="@drawable/icon_album_data" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:visibility="gone"
+        android:layout_marginLeft="12dp"
+        android:background="@color/grey_dd" />
+
+    <LinearLayout
+        android:id="@+id/ll_record"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="70dp"
+        android:background="@drawable/grey_click_selector"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="55dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/icon_record" />
+
+            <net.soulwolf.widget.speedyselector.widget.SelectorTextView
+                android:id="@+id/tv_record_num"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center"
+                android:background="@color/bg_light_red"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="0"
+                android:textColor="@color/bg_light_red"
+                android:textSize="10dp"
+                android:visibility="gone"
+                app:spRadius="10dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left|center"
+                android:paddingLeft="5dp"
+                android:text="联系记录"
+                android:textColor="@color/green_00"
+                android:textSize="17dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="15.3dp"
+                    android:src="@drawable/icon_album_data" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="12dp"
+        android:background="@color/grey_dd" />
+
+</LinearLayout>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="E:\nana\WebCastApp\IMKit\src\main\libs"><file name="AMap_Channel_Location_V1.4.0_20160708.jar" path="E:\nana\WebCastApp\IMKit\src\main\libs\AMap_Channel_Location_V1.4.0_20160708.jar"/><file name="Rong_IMKit.jar" path="E:\nana\WebCastApp\IMKit\src\main\libs\Rong_IMKit.jar"/></source></dataSet><dataSet config="debug"><source path="E:\nana\WebCastApp\IMKit\src\debug\jniLibs"/></dataSet></merger>

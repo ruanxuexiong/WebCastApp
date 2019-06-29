@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="15dp">
+
+    <TextView
+        android:id="@+id/meeting_record_txt_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="唐诗悦"
+        android:textColor="@color/black_32"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/meeting_record_txt_other"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="唐诗悦"
+        android:textColor="@color/grey_64"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/meeting_record_txt_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="1时20分"
+        android:textColor="@color/grey_64"
+        android:textSize="15sp"/>
+
+</RelativeLayout>

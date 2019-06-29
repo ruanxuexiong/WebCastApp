@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_toolbar_common" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/rl_search"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/activity_bg"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.android.nana.widget.DrawableCenterTextView
+                android:id="@+id/tv_search"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/shape_corner_down"
+                android:drawableLeft="@drawable/ic_san_search"
+                android:drawablePadding="1dp"
+                android:enabled="false"
+                android:textSize="16dp"
+                android:padding="8dp"
+                android:text="搜索"
+                android:textColor="#6A747E" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/activity_bg">
+
+
+            <ListView
+                android:id="@+id/lv_follow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/layout_list_view"
+                android:layout_gravity="center"
+                android:divider="@color/activity_bg"
+                android:dividerHeight="0.5dp" />
+
+
+            <TextView
+                android:id="@+id/tv_dialog"
+                android:layout_width="80.0dip"
+                android:layout_height="80.0dip"
+                android:layout_gravity="center"
+                android:background="@drawable/number_base"
+                android:gravity="center"
+                android:textSize="30.0dip"
+                android:visibility="invisible" />
+
+            <com.android.nana.widget.SideBar
+                android:id="@+id/sidrbar"
+                android:layout_width="30.0dip"
+                android:layout_height="fill_parent"
+                android:layout_gravity="right|center" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

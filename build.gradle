@@ -1,0 +1,37 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+apply from: "config.gradle"
+buildscript {
+    repositories {
+        jcenter()
+        mavenCentral()
+        google()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.0.1'
+        // just for GCM.
+        classpath 'com.google.gms:google-services:2.0.0-alpha3'
+        classpath 'com.novoda:bintray-release:0.3.4'
+        //兼容发现页自动播放
+        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.7.3'
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5'
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+allprojects {
+    repositories {
+        maven { url "https://jitpack.io" }
+        jcenter()
+        maven {url 'http://developer.huawei.com/repo/'}
+        mavenCentral()
+        maven { url "https://maven.google.com" }
+    }
+}
+
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+dependencies {
+}
